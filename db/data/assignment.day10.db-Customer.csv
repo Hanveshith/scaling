@@ -1,0 +1,6 @@
+custid,name,email,phone,city,createdAt,createdBy,modifiedAt,modifiedBy
+11111111-aaaa-4bbb-cccc-123456789001,John Doe,john.doe@example.com,9876543210,Hyderabad, 2025-11-06T10:15:00Z,admin,2025-11-06T10:15:00Z,admin
+22222222-aaaa-4bbb-cccc-123456789002,Anita Sharma,anita.sharma@example.com,9123456780,Delhi,2025-11-06T10:20:00Z,admin,2025-11-06T10:20:00Z,admin
+33333333-aaaa-4bbb-cccc-123456789003,Rahul Singh,rahul.singh@example.com,9081726354,Mumbai,2025-11-06T10:25:00Z,admin,2025-11-06T10:25:00Z,admin
+44444444-aaaa-4bbb-cccc-123456789004,Sruthi Reddy,sruthi.reddy@example.com,9012345678,Chennai,2025-11-06T10:30:00Z,admin,2025-11-06T10:30:00Z,admin
+55555555-aaaa-4bbb-cccc-123456789005,Michael Thomas,michael.t@example.com,9090909090,Bengaluru,2025-11-06T10:35:00Z,admin,2025-11-06T10:35:00Z,admin

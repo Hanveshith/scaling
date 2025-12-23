@@ -1,0 +1,6 @@
+itemid,name,description,price,imageurl,createdAt,createdBy,modifiedAt,modifiedBy
+11111111-bbbb-4ccc-dddd-100000000001,Pizza Margherita,Classic cheese pizza,250,https://assets.surlatable.com/m/15a89c2d9c6c1345/72_dpi_webp-REC-283110_Pizza.jpg,2025-11-06T10:40:00Z,admin,2025-11-06T10:40:00Z,admin
+22222222-bbbb-4ccc-dddd-100000000002,Burger Deluxe,Grilled chicken burger with cheese,180,https://images.pexels.com/photos/2874979/pexels-photo-2874979.jpeg,2025-11-06T10:42:00Z,admin,2025-11-06T10:42:00Z,admin
+33333333-bbbb-4ccc-dddd-100000000003,Cold Coffee,Chilled coffee with ice cream,120,https://images.pexels.com/photos/28744927/pexels-photo-28744927.jpeg,2025-11-06T10:44:00Z,admin,2025-11-06T10:44:00Z,admin
+44444444-bbbb-4ccc-dddd-100000000004,Masala Dosa,South Indian masala dosa,90,https://images.pexels.com/photos/20422138/pexels-photo-20422138.jpeg,2025-11-06T10:46:00Z,admin,2025-11-06T10:46:00Z,admin
+55555555-bbbb-4ccc-dddd-100000000005,French Fries,Crispy salted fries,80,https://images.pexels.com/photos/1893555/pexels-photo-1893555.jpeg,2025-11-06T10:48:00Z,admin,2025-11-06T10:48:00Z,admin

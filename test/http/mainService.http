@@ -1,0 +1,261 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### Customer
+# @name Customer_GET
+GET {{server}}/odata/v4/main/Customer
+Authorization: Basic {{username}}:{{password}}
+
+
+### Customer
+# @name Customer_POST
+POST {{server}}/odata/v4/main/Customer
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "custid": "13548887-9787-40f5-a04d-83bb228e5534",
+  "name": "name-13548887",
+  "email": "0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+  "phone": "e-13548887",
+  "city": "city-13548887",
+  "createdAt": "2012-10-29T00:00:00.000Z",
+  "createdBy": "createdBy.82edz@example.net",
+  "modifiedAt": "2016-09-06T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.82edz@example.com"
+}
+
+
+### Customer
+# @name Customer_PATCH
+PATCH {{server}}/odata/v4/main/Customer/13548887-9787-40f5-a04d-83bb228e5534
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "custid": "13548887-9787-40f5-a04d-83bb228e5534",
+  "name": "name-13548887",
+  "email": "0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+  "phone": "e-13548887",
+  "city": "city-13548887",
+  "createdAt": "2012-10-29T00:00:00.000Z",
+  "createdBy": "createdBy.82edz@example.net",
+  "modifiedAt": "2016-09-06T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.82edz@example.com"
+}
+
+
+### Customer
+# @name Customer_DELETE
+DELETE {{server}}/odata/v4/main/Customer/13548887-9787-40f5-a04d-83bb228e5534
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Items
+# @name Items_GET
+GET {{server}}/odata/v4/main/Items
+Authorization: Basic {{username}}:{{password}}
+
+
+### Items
+# @name Items_POST
+POST {{server}}/odata/v4/main/Items
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "itemid": "21013426-799f-4fbb-b336-eb81be0e83fd",
+  "name": "name-21013426",
+  "description": "description-21013426",
+  "price": 1481375.19,
+  "imageurl": "imageurl-21013426",
+  "createdAt": "2002-08-30T00:00:00.000Z",
+  "createdBy": "createdBy.cie2a@example.org",
+  "modifiedAt": "2007-12-29T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.cie2a@example.net"
+}
+
+
+### Items
+# @name Items_PATCH
+PATCH {{server}}/odata/v4/main/Items/21013426-799f-4fbb-b336-eb81be0e83fd
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "itemid": "21013426-799f-4fbb-b336-eb81be0e83fd",
+  "name": "name-21013426",
+  "description": "description-21013426",
+  "price": 1481375.19,
+  "imageurl": "imageurl-21013426",
+  "createdAt": "2002-08-30T00:00:00.000Z",
+  "createdBy": "createdBy.cie2a@example.org",
+  "modifiedAt": "2007-12-29T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.cie2a@example.net"
+}
+
+
+### Items
+# @name Items_DELETE
+DELETE {{server}}/odata/v4/main/Items/21013426-799f-4fbb-b336-eb81be0e83fd
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Orders
+# @name Orders_GET
+GET {{server}}/odata/v4/main/Orders
+Authorization: Basic {{username}}:{{password}}
+
+
+### Orders
+# @name Orders_POST
+POST {{server}}/odata/v4/main/Orders
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "orderid": "14554225-a47a-4d61-ad8d-d7a43404a966",
+  "status": "Cancelled",
+  "customer": {
+    "custid": "13548887-9787-40f5-a04d-83bb228e5534"
+  },
+  "orderitems": [
+    {
+      "orditmid": "20831305-f2fc-4525-a611-444779facf8a",
+      "quantity": 46.72,
+      "totalprice": 9402863.17,
+      "item": {
+        "itemid": "21013426-799f-4fbb-b336-eb81be0e83fd"
+      },
+      "createdAt": "2011-01-15T00:00:00.000Z",
+      "createdBy": "createdBy.cehjd@example.net",
+      "modifiedAt": "2005-10-14T00:00:00.000Z",
+      "modifiedBy": "modifiedBy.cehjd@example.com"
+    },
+    {
+      "orditmid": "20831306-007a-4382-a3ce-5ac4c07c43be",
+      "quantity": 50.47,
+      "totalprice": 26518546.49,
+      "item": {
+        "itemid": "21013426-799f-4fbb-b336-eb81be0e83fd"
+      },
+      "createdAt": "2017-04-24T00:00:00.000Z",
+      "createdBy": "createdBy.cehje@example.net",
+      "modifiedAt": "2004-08-09T00:00:00.000Z",
+      "modifiedBy": "modifiedBy.cehje@example.com"
+    }
+  ],
+  "createdAt": "2017-09-29T00:00:00.000Z",
+  "createdBy": "createdBy.8ny41@example.org",
+  "modifiedAt": "2007-08-19T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.8ny41@example.com"
+}
+
+
+### Orders
+# @name Orders_PATCH
+PATCH {{server}}/odata/v4/main/Orders/14554225-a47a-4d61-ad8d-d7a43404a966
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "orderid": "14554225-a47a-4d61-ad8d-d7a43404a966",
+  "status": "Cancelled",
+  "customer": {
+    "custid": "13548887-9787-40f5-a04d-83bb228e5534"
+  },
+  "orderitems": [
+    {
+      "orditmid": "20831305-f2fc-4525-a611-444779facf8a",
+      "quantity": 46.72,
+      "totalprice": 9402863.17,
+      "item": {
+        "itemid": "21013426-799f-4fbb-b336-eb81be0e83fd"
+      },
+      "createdAt": "2011-01-15T00:00:00.000Z",
+      "createdBy": "createdBy.cehjd@example.net",
+      "modifiedAt": "2005-10-14T00:00:00.000Z",
+      "modifiedBy": "modifiedBy.cehjd@example.com"
+    },
+    {
+      "orditmid": "20831306-007a-4382-a3ce-5ac4c07c43be",
+      "quantity": 50.47,
+      "totalprice": 26518546.49,
+      "item": {
+        "itemid": "21013426-799f-4fbb-b336-eb81be0e83fd"
+      },
+      "createdAt": "2017-04-24T00:00:00.000Z",
+      "createdBy": "createdBy.cehje@example.net",
+      "modifiedAt": "2004-08-09T00:00:00.000Z",
+      "modifiedBy": "modifiedBy.cehje@example.com"
+    }
+  ],
+  "createdAt": "2017-09-29T00:00:00.000Z",
+  "createdBy": "createdBy.8ny41@example.org",
+  "modifiedAt": "2007-08-19T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.8ny41@example.com"
+}
+
+
+### Orders
+# @name Orders_DELETE
+DELETE {{server}}/odata/v4/main/Orders/14554225-a47a-4d61-ad8d-d7a43404a966
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### OrderItems
+# @name OrderItems_GET
+GET {{server}}/odata/v4/main/OrderItems
+Authorization: Basic {{username}}:{{password}}
+
+
+### OrderItems
+# @name OrderItems_POST
+POST {{server}}/odata/v4/main/OrderItems
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "orditmid": "20831305-f2fc-4525-a611-444779facf8a",
+  "quantity": 46.72,
+  "totalprice": 9402863.17,
+  "item": {
+    "itemid": "21013426-799f-4fbb-b336-eb81be0e83fd"
+  },
+  "createdAt": "2011-01-15T00:00:00.000Z",
+  "createdBy": "createdBy.cehjd@example.net",
+  "modifiedAt": "2005-10-14T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.cehjd@example.com"
+}
+
+
+### OrderItems
+# @name OrderItems_PATCH
+PATCH {{server}}/odata/v4/main/OrderItems/20831305-f2fc-4525-a611-444779facf8a
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "orditmid": "20831305-f2fc-4525-a611-444779facf8a",
+  "quantity": 46.72,
+  "totalprice": 9402863.17,
+  "item": {
+    "itemid": "21013426-799f-4fbb-b336-eb81be0e83fd"
+  },
+  "createdAt": "2011-01-15T00:00:00.000Z",
+  "createdBy": "createdBy.cehjd@example.net",
+  "modifiedAt": "2005-10-14T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.cehjd@example.com"
+}
+
+
+### OrderItems
+# @name OrderItems_DELETE
+DELETE {{server}}/odata/v4/main/OrderItems/20831305-f2fc-4525-a611-444779facf8a
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
