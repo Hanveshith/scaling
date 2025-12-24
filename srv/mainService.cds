@@ -1,6 +1,6 @@
 using { assignment.day10.db as db } from '../db/domain/OrderItems';
 
-define service mainService @(requires: 'authenticated-user') {
+define service mainService{
     entity Customer as projection on db.Customer;
     @Capabilities : { 
         Readable,

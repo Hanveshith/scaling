@@ -24,7 +24,6 @@ modules:
         properties:
           srv-url: ${default-url}
     requires:
-      - name: scaling-auth
       - name: scaling-db
 
   - name: scaling-db-deployer
@@ -48,7 +47,6 @@ modules:
           name: srv-api # must be used in xs-app.json as well
           url: ~{srv-url}
           forwardAuthToken: true
-      - name: scaling-auth
     provides:
       - name: app-api
         properties:
@@ -56,20 +54,7 @@ modules:
           app-uri: ${default-uri}
 
 resources:
-  - name: scaling-auth
-    type: org.cloudfoundry.managed-service
-    parameters:
-      service: xsuaa
-      service-plan: application
-      path: ./xs-security.json
-      config:
-        xsappname: scaling-${org}-${space}
-        tenant-mode: dedicated
-        oauth2-configuration:
-          redirect-uris:
-            - https://*~{app-api/app-uri}/**
-    requires:
-      - name: app-api
+
   - name: scaling-db
     type: com.sap.xs.hdi-container
     parameters:
