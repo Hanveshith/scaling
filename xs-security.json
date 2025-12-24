@@ -1,6 +1,6 @@
 {
-  "xsappname" : "scaling",
-  "tenant-mode" : "dedicated",
+  "xsappname": "scaling",
+  "tenant-mode": "dedicated",
   "scopes": [
     {
       "name": "$XSAPPNAME.ADMIN",
